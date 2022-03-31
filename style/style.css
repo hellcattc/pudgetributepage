@@ -1,0 +1,184 @@
+@use "sass:string" {}@font-face {
+  font-family: "Fira Sans";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 100;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-thinitalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-extralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 200;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-extralightitalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-lightitalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-regularitalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-mediumitalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 600;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-bolditalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-semibolditalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 800;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-extrabolditalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  src: url("../fonts/FiraSans/FiraSans-black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-blackitalic.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+}
+
+#title {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: 50px;
+  margin: 30px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+#img {
+  margin: 0 auto 30px;
+  width: 500px;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  position: relative;
+  text-align: center;
+  font-family: "Fira Sans";
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+}
+
+#tribute-info {
+  margin: 0 auto 30px;
+  font-family: "fira sans";
+  font-weight: 300;
+  font-style: normal;
+}
+
+#main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #000;
+}
+
+#tribute-link:hover {
+  color: #f00;
+}
+
+#atext {
+  width: 100%;
+  text-align: center;
+  font-family: "fira sans";
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

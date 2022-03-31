@@ -1,0 +1,82 @@
+@use "sass:string"
+
+@function str-replace($string, $search, $replace: '')
+  $index: str-index($string, $search)
+  @if $index
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace)
+  @return $string 
+
+//For Google Fonts
+$font-weights: ('thin':100, 'extralight':200, 'light':300, 'regular':400, 'medium':500, 'bold':600, 'semibold':700, 'extrabold':800, 'black':900)
+
+@mixin font-face($font-name, $font-weight, $font-style)
+  @font-face
+    font-family: $font-name
+    font-weight: map-get($font-weights, $font-weight)
+    font-style: $font-style
+    @if $font-style == normal
+      $font-style: ''
+    $font-name: str-replace($font-name, " ", "")
+    src:  url('../fonts/#{$font-name}/#{$font-name+'-'+$font-weight+$font-style}.ttf') format('truetype')
+ 
+@mixin get-fonts($font-name, $weights) 
+  @each $weight in $weights 
+    @include font-face($font-name, $weight, normal)
+    @include font-face($font-name, $weight, italic)
+
+$weights: thin, extralight, light, regular, medium, bold, semibold, extrabold, black
+
+@include get-fonts($font-name: 'Fira Sans' , $weights: $weights)
+
+body 
+  margin: 0
+
+#title 
+  font-family: "Fira Sans"
+  font-weight: 700
+  font-size: 50px 
+  margin: 30px 0px
+  text-align: center
+  width: 100%
+
+#img 
+  margin: 0 auto 30px
+  width: 500px
+
+#image
+  width: 100%
+  height: auto
+
+#img-caption
+  position: relative
+  text-align: center
+  font-family: "Fira Sans"
+  font-weight: 200
+  font-style: italic
+  font-size: 20px
+
+#tribute-info
+  margin: 0 auto 30px
+  font-family: "fira sans"
+  font-weight: 300
+  font-style: normal
+
+#main 
+  width: 90%
+  margin: 0 auto
+
+#tribute-link
+  text-decoration: none
+  color: #000
+
+#tribute-link:hover
+  color: #f00
+
+#atext
+  width: 100%
+  text-align: center
+  font-family: "fira sans"
+  font-weight: 500
+
+
+
